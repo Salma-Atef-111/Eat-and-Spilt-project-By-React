@@ -76,6 +76,7 @@ export default function App() {
           <FormSpiltBill
             selcetedFriend={selcetedFriend}
             handleSpiltBill={handleSpiltBill}
+            key={selcetedFriend.id}
           />
         )}
       </div>
@@ -171,7 +172,6 @@ function FormAddFriend({ handleAddFriend }) {
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-
         <Button>Add</Button>
       </form>
     </>
